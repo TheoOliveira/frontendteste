@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+
+/*HEADER*/
+.header {
+  /*padding: 0px; */
+  text-align: center; 
+  /*position: relative;*/
+  flex: 70%; 
+  background-color: white; 
+  padding: 20px; 
+}
+ 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* DESIGN DO NAVBAR */
+.navbar {
+  overflow: hidden; 
+
+  }
+
+.preco{
+text-transform: uppercase;
+
+
+}
+
+/* DESIGN DOS LINKS DO NAVBAR */
+.navbar a {
+  float: left; 
+  display: block; 
+  color: black; 
+  text-align: center;
+  padding: 13px 27px; 
+  padding-left: 0;
+  text-decoration: none; 
+  text-transform: uppercase;
+  
+
+}
+
+/* LINK A DIREITA */
+.navbar a.right {
+  float: right; 
+}
+
+/*NAVBAR 2*/
+.navbar2 a {
+  float: left; 
+  display: block; 
+  color: black; 
+  text-align: center;
+  padding: 13px 27px; 
+  padding-left: 0;
+  text-decoration: none; 
+  text-transform: uppercase;
+  
+
+}
+
+.infoLoja {
+  list-style-type: none;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  margin: auto;
+  width: 25%;
+}
+
+p{
+  font-size: 10px;
+}
+
+i{
+  font-weight: bold;
+}
+/* CONTAINER DE COLUNA */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card{
+  float: left;
+  width: 20%;
+  padding: 0 10px;
+  text-align: center;
+}
+
+#promo{
+  margin-top: 40px;
+}
+
+/* Card padding */
+.container {
+  padding: 2px 16px;
+}
+
+/*Centraliza o card*/
+.containerCard{
+  float: left;
+  width: 150%;
+}
+
+/*Centraliza a img*/
+.card img{
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
+
+#fotoComp{
+  object-fit: contain;
+
+}
+
+.button{
+  background-color: white;
+  color: black;
+  border: 1px solid #555555;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+/* Remove margens extras */
+.row {margin: 0 -5px;}
+
+
+h4{
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+/* COLUNA PRINCIPAL */
+.main {
+  flex: 70%; 
+  background-color: white; 
+  padding: 20px; 
+}
+
+/* Responsive Menor que  700px faz as colunas estacarem*/
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive Menor que 400px faz as colunas estacarem */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Esconde as imagens */
+.mySlides {
+  display: none;
+}
+
+/* Botões próximo e anterior */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* posição do botão 'prṕximo' */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Ao passar adiciona um funto preto */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Texto abaixo da imagem do slider */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Numero da imagem do slider (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Os indicadores */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Animação do slider */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.footer {
+  padding: 20px; 
+  text-align: center; 
+  
+}
